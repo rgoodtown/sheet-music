@@ -28,10 +28,10 @@ r  | r| r | r|  r8 fis4->\f  r8 r8 e4-> r8 | r8 fis4.->~ fis4\fermata r  |
 
 SopLyrics = \lyricmode {
   I was a ca -- ter -- pill -- ar | born in a sil -- ver | val -- ley, where the |
-  green grass grew and | ev -- ery one knew that | they'd be a but -- ter -- | fly 
-	oo -- | oo --  oo -- oo  | but -- ter --  | fly  
+  green grass grew and | ev -- ery one knew that | they'd be a but -- ter -- | fly. 
+	Oo -- | oo --  oo -- oo  | but -- ter --  | fly  
 }
-AltoLyrics = \lyricmode {  they'd be a but -- ter -- | fly 
+AltoLyrics = \lyricmode {  they'd be a but -- ter -- | fly. 
 	oo --    the |
     green grass   grew and | ev -- ery one | knew that they'd be a | but -- ter  fly
   }
