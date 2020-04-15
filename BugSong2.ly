@@ -5,7 +5,7 @@
 
 
 
-global = { \key d \major \time 2/2 \tempo 2 = 76}
+global = { \key d \major \time 2/2 \tempo 2 = 72}
 
 SopMusic = \relative c' {
   d4 \mp d8 d fis d d d | d4 e8 fis g4 e |  fis8 a2 \< r8 a a
@@ -22,6 +22,10 @@ AltoMusic = \relative c' { r1  |r  | r| r | r|  d4 \mp d8 d g fis4. | d2. r4
   }
 
 TenorMusic = \relative c {\clef "G_8" r1  |r  | r| r | r|  |r  | r| r | r| r| 
+r  | r| r | r|  r8 fis4->\f  r8 r8 e4-> r8 | r8 fis4.->~ fis4\fermata r  |
+  }
+
+BassMusic  = \relative c {\clef "Bass" r1  |r  | r| r | r|  |r  | r| r | r| r| 
 r  | r| r | r|  r8 fis4->\f  r8 r8 e4-> r8 | r8 fis4.->~ fis4\fermata r  |
   }
 
