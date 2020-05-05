@@ -12,9 +12,9 @@ SopMusic = \relative c' {
   | b4  \! \mf  d\> a fis | g8 fis e4 fis d | d \! \p e8 d g g4. |
    fis2 r4 fis8( g |a1~|  a4) g8( fis g2 ~| g2~ g8) a( b cis | d1 | b1) | <b a>2( <b gis>|
 	 <b g!> fis4) r| r8 a4-> \f r8 r b4-> r8 
-   |\time 3/2 r8 <d>4~->( <d a'>8~ )<d a'>2\fermata r4 
-   a8 g | fis4 d d e8 fis  e a, a4  | a b d e8 fis g8 e4. | fis2 r4 a 
-   b d8 d | a4 fis  g8 fis e4 fis g |\time 5/4  a d,8 a' d4 r r | e r fis2.\fermata  
+   |\time 3/2 r8 <d>4~->( <d a'>8~ )<d a'>2\fermata r4 r4
+   r1. | r1. | r2 r4 a 
+   b d8 d | a4 fis  g8 fis e4 fis g |\time 5/4  a d,8 a' d2 r4 | e r <e g>2.\fermata  
 	      
 }
 %  d4 \mp d8 d g fis4.
@@ -22,8 +22,7 @@ AltoMusic = \relative c' { r1  |r  | r| r | r|  d4 \mp d8 d g fis4. | d2 r
 | cis2.( a4 | b2. dis4 | e2 eis2| fis2)   
 
  r4 fis | g4 e  fis d | d8 d d4  b b | a b8 a b b4.  | d1~ | \time 3/2 d2~ d2\fermata r4
- a'8 g | fis4 d d e8 fis  e a, a4  | a b d e8 fis g8 e4. | fis2 r4 a |
-   b d a fis | g8 fis e4 fis g | a d,8 a' d4 r | e r fis  
+ a'8 g | fis4 d d e8 fis  e a, a4  | a b d e8 fis g8 e4. | fis2 r4
   }
 
 TenorMusic = \relative c {\clef "G_8" r1  |r  | r| r | r|  |r  | r| r | r| r| 
@@ -44,6 +43,9 @@ SopLyrics = \lyricmode {
 AltoLyrics = \lyricmode {  they'd be a but -- ter -- | fly. 
 	oo --    the |
     green grass   grew and | ev -- ery one | knew that they'd be a | but -- ter  fly
+
+    We would | feast all day on the ho -- ney -- dew | leaves and bask in the lo -- ving |
+    sun  
   }
 
 TenorLyrics = \lyricmode {
