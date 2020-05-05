@@ -13,8 +13,8 @@ SopMusic = \relative c' {
    fis2 r4 fis8( g |a1~|  a4) g8( fis g2 ~| g2~ g8) a( b cis | d1 | b1) | <b a>2( <b gis>|
 	 <b g!> fis4) r| r8 a4-> \f r8 r b4-> r8 
    |\time 3/2 r8 <d>4~->( <d a'>8~ )<d a'>2\fermata r4 
-   a8 g | fis4 d d e8 fis  e a, a4  | a b d e8 fis g8 e4. | fis2 r4 a |
-   b d a fis | g8 fis e4 fis g | a d,8 a' d4 r | e r fis  
+   a8 g | fis4 d d e8 fis  e a, a4  | a b d e8 fis g8 e4. | fis2 r4 a 
+   b d8 d | a4 fis  g8 fis e4 fis g |\time 5/4  a d,8 a' d4 r r | e r fis2.\fermata  
 	      
 }
 %  d4 \mp d8 d g fis4.
