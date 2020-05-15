@@ -9,13 +9,14 @@ global = {
 
 sopranonotes = \relative c'' {
 r2. r2 | r2. r2 | r2. r2 | r2. r2 | d,2. e2 | f2.( g2 | a2.~ a4) bes | a2 r4 r2 |
-f2. g2 | a2. g2 | f2.~ f4 e  | f2. r2 | bes8 bes
+f2. g2 | a2. bes2 | c2.~ c4 d  | d2. r2 | r4 a a a2 | a2. bes2
+  % a2. g2 | f2.~ f4 e  | f2. r2 | r4 a a a2 | a2. bes2
   
 }
 sopranowords = \lyricmode { Me -- ta -- | mor --  |  pho -- | sis }
 altonotes = \relative c' {
   r2. r2  | r2. r2 | d2 d4 d d | f2 e4 d c | d2. r2 | a'2 g4 f r | g f2 g2 |
-  r2 g4 a2 | g4 f2 e2 | d4 r2 d4 f | a2.~ a2 | aes4 g2 r2 | 
+  r2 g4 a2 | g4 f2 e2 | d4 r2 d4 f | a2.~ a2 | aes4 g2 r2 | r4 g g f2 | f2. f2
 
 }
 altowords = \lyricmode { Then the me -- ta -- | mor -- pho -- sis be -- | gan}
@@ -23,6 +24,7 @@ tenornotes = \relative c'{
   \clef "G_8"
   r2. r2 | a2 a4 a a | g2 g4 g g | a2. r2 | r4  g \f a bes c! | cis d a bes r |
   cis2.-> d2 | cis2.-> d4 cis | r2. cis2-- | d-- f4~->( f2~ | f4 e2 d4 c!) | bes2. r2|
+  r4 cis cis  d2 | c2. d2
 
 }
 tenorwords = \lyricmode { Then the me -- ta -- | mor -- pho -- sis be -- | gan
@@ -31,7 +33,7 @@ ved }
 bassnotes = \relative {
   \clef bass
   d2 d4 d d | c2 c4 c c  | d2. r2 | d2 d4 d d | c2 c4 c c  | d2. r2 |
-  a'2. g2 | f2. e2 | d2.~ d4 cis | bes2 
+  a'2. g2 | f2. e2 | d2.~ d4 cis | d2 
   %d2. e2 | f2. g2 | a2.~ a4 bes4 | a2 
 }
 basswords = \lyricmode { Then the me -- ta -- | mor -- pho -- sis be -- | gan | 
