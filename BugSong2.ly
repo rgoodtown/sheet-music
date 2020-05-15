@@ -26,12 +26,14 @@ AltoMusic = \relative c' { r1  |r  | r| r | r|  d4 \mp d8 d g fis4. | d2 r
   }
 
 TenorMusic = \relative c {\clef "G_8" r1  |r  | r| r | r|  |r  | r| r | r| r| 
-r  | r| r | r|  r8 fis4->\f  r8 r8 e4-> r8 |\time 3/2 r8 fis4.->~ fis2\fermata r4    
-fis8 g | a4 a b a8 fis g e e4 | fis g a g8 fis g b4. | a2
+r  | d( | e2. eis4~ | eis1) | % dis2.( e4~| e2. eis4~ | eis1)
+ |  r8 fis4->\f  r8 r8 e4-> r8 |\time 3/2 r8 fis4.->~ fis2\fermata r4    
+fis8 g | a4 a b a8 fis g e e4 | fis g a g8 fis g b4. | a2 r4 a g fis8 fis | 
+g4 gis a8 a ais4 b4 b | e d8 d cis2 r4 |  d4 r4 <fis d>2.\fermata
   }
 
 BassMusic  = \relative c {\clef bass r1  |r  | r| r | r|  |r  | r| r | r| r| 
-r  | r| r | r|  r8 fis4->\f  r8 r8 e4-> r8 | \time 3/2 r8 fis4.->~ fis2\fermata r  |
+r  | r| r | r|  r8 d4->\f  r8 r8 d4-> r8 | \time 3/2 r8 d4.->~ d2\fermata r  |
   }
 
 
@@ -48,8 +50,13 @@ AltoLyrics = \lyricmode {  they'd be a but -- ter -- | fly.
     sun  
   }
 
-TenorLyrics = \lyricmode {
- but -- ter --  | fly
+TenorLyrics = \lyricmode { Ooo
+ But -- ter --  | fly We would | feast all day on the ho -- ney -- dew | leaves and bask in the lo -- ving |
+    sun  
+ }
+
+ BassLyrics = \lyricmode {
+ But -- ter --  | fly
  }
 
 
