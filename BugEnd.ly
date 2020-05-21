@@ -1,27 +1,32 @@
 
 global = {
-  \key c \major
-  \time 4/4
+  \key fis \minor
+  \time 2/2 \tempo 2 = 80
   \dynamicUp
 }
-sopranonotes = \relative c'' {
-  c2 \p \< d c d \f
+sopranonotes = \relative c' { r8 fis g a c2 | r8 fis, g a c2 |  r8 cis, g'4 fis2~ | 
+fis8 cis e cis d2  
+ 
+
 }
-sopranowords = \lyricmode { do do do do }
+sopranowords = \lyricmode { i spread my wings  these dull grey wings }
 altonotes = \relative c'' {
-  c2\p d c d
 }
 altowords = \lyricmode { re re re re }
-tenornotes = {
-  \clef "G_8"
-  c2\mp d c d
+tenornotes = \relative c' {   \clef "G_8"
+r1 r1 r1 r1 r r r r r r r r
+\time 3/4
+ fis,2 fis4 | gis2 gis4 | a2. | r4 cis a | 
+  fis2 fis4 | gis2 gis4 | a2. | r4 cis a 
 }
 tenorwords = \lyricmode { mi mi mi mi }
-bassnotes = {
-  \clef bass
-  c2\mf d c d
+bassnotes = \relative c { \clef bass
+  r1 r1 r1 r1 r r r r r r r r
+ b2 b4 | gis2 gis4 | fis2.~ | fis4 r r |
+  b2 b4 | gis2 gis4 | fis2.~ | fis4 r r |
 }
 basswords = \lyricmode { mi mi mi mi }
+
 
 \score {
   \new ChoirStaff <<
@@ -42,7 +47,7 @@ basswords = \lyricmode { mi mi mi mi }
     \new Staff <<
       \new Voice = "tenor" <<
         \global
-        \tenornotes
+        \tenornotes 
       >>
       \lyricsto "tenor" \new Lyrics \tenorwords
     >>
@@ -54,4 +59,9 @@ basswords = \lyricmode { mi mi mi mi }
       \lyricsto "bass" \new Lyrics \basswords
     >>
   >>
+  
+
+\layout{}
+
+\midi{}
 }
