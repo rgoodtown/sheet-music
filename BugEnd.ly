@@ -4,7 +4,7 @@ global = {
   \time 2/2 \tempo 2 = 66
   \dynamicUp
 }
-sopranonotes = \relative c' { r2 r8 fis g a | c2  r8 fis, g a | c2 r8 fis, c'4 | b2~  
+sopranonotes = \relative c' { r2 r8 fis g a | c2  r8 fis, g a | c2 r8 fis, c'4 |\appoggiatura d16 b2~  
 b8 fis a fis | g4 r r a | fis d8 d d4 e8 fis | g4 e fis8 a4.~ | a8 fis a fis g4 r | 
 r2 r4  fis | g2. a4 | c4.( d8) b2~ | b r4 c  | b2. a4 | \tuplet 3/2 {fis e d~} d2  |
 r1 r4 e  g2  r4 e-. a-. fis-. g2  r4 g8 g a4-. r a-. r  c-. r d-. r |  b2 r4 | 
