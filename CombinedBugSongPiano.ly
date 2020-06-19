@@ -61,7 +61,7 @@ altoMusic = \relative c' { r1  |r  | r| r | r|  d4 \mp d8 d g fis4. | d2 r
  a'8\mf g |fis4 d  d e8 fis  e a, a4  | a b d e8 fis g8 e4. | fis2 r4 fis e d8 d |
  e4 d e8 e e4 e e  | fis fis8 fis a2 r4 | b8( g8) r4 <a cis>2.\fermata 
 
-  r2. r2  | r2. r2 | d2\mp\< d4 d d | f2\f\> e4 d c | d2.\! r2 | r2. a'2 | g a2. | g2.~ g4 f |
+  r2. r2  | r2. r2 | d,2\mp\< d4 d d | f2\f\> e4 d c | d2.\! r2 | r2. a'2 | g a2. | g2.~ g4 f |
   g2. r2 | a2 g4  f e | d2 r4 d4 f | a2.~( a4 aes4~ | aes4) g2 r2 | 
   r2. f4\mf f | f2. g2 | f2.~ f2 |
   r2 r8 f\p f f |f2 e | d1 | r4 fis8 fis a4-. r | g4-. r f!2-. |r1 r r2 r8 fis\mp fis4 | a2~\fermata a8 r r4 | a8\pp fis g4 r
@@ -91,7 +91,7 @@ r  | d(\mp | e2. eis4~ | eis1) | % dis2.( e4~| e2. eis4~ | eis1)
 fis8 g | a4 a b a8 fis g e e4 | fis g a g8 fis g b4. | a2 r4 a g fis8 fis | 
 g4 gis a8 a ais4 b4 b | e d8 d cis2 r4 | d8( e8) r4 fis2.\fermata
 
- r2. r2 | a2\mp\< a4 a a | g2\> g4 g g | a2.\! r2 | r4  g \f a bes c! | cis2 d bes4 | a2. r2 |
+ r2. r2 | a,2\mp\< a4 a a | g2\> g4 g g | a2.\! r2 | r4  g \f a bes c! | cis2 d bes4 | a2. r2 |
   cis2.-> d2 | cis2-> d4 cis-> r | r2. cis2-- | d-- f4~->( f2~ | f4 e2 d4 c!) | bes2. r2| 
   r2. a4\mf a | bes2. g2 | f2.~ f2 |
   r r8 a\p a a | bes2 c! | b1 | r4 cis8 cis cis4-. r | cis-. r d2-. | r2 r8 c\p c c | c4( b)\fermata r2 |
@@ -148,30 +148,34 @@ Drawn to -- wards the light Drawn to -- wards the light}
 \score {
   <<
     \new ChoirStaff <<
-      \new Lyrics = "sopranos" \with {
-        % This is needed for lyrics above a staff
-        \override VerticalAxisGroup.staff-affinity = #DOWN
-      }
-      \new Staff = "women" <<
-        \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
-        \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
+         \new Staff <<
+      \new Voice = "soprano" <<
+        \global
+        \sopMusic
       >>
-      \new Lyrics = "altos"
-      \new Lyrics = "tenors" \with {
-        % This is needed for lyrics above a staff
-        \override VerticalAxisGroup.staff-affinity = #DOWN
-      }
-
-      \new Staff = "men" <<
-        \clef bass
-        \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
-        \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
+      \new Lyrics \lyricsto "soprano" \sopWords
+    >>
+    \new Staff <<
+      \new Voice = "alto" <<
+        \global
+        \altoMusic
       >>
-      \new Lyrics = "basses"
-      \context Lyrics = "sopranos" \lyricsto "sopranos" \sopWords
-      \context Lyrics = "altos" \lyricsto "altos" \altoWords
-      \context Lyrics = "tenors" \lyricsto "tenors" \tenorWords
-      \context Lyrics = "basses" \lyricsto "basses" \bassWords
+      \new Lyrics \lyricsto "alto" \altoWords
+    >>
+    \new Staff <<
+      \new Voice = "tenor" <<
+        \global
+        \tenorMusic
+      >>
+      \new Lyrics \lyricsto "tenor" \tenorWords
+    >>
+    \new Staff <<
+      \new Voice = "bass" <<
+        \global
+        \bassMusic
+      >>
+      \new Lyrics \lyricsto "bass" \bassWords
+    >>
     >>
     \new PianoStaff <<
       \new Staff <<
